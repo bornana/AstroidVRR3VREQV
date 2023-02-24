@@ -5,18 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".GameActivity">
+
     <FrameLayout
         android:id="@+id/frame"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
 
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="90dp"
+        android:text="HitPoints left: 3" />
     <Button
+        android:id = "@+id/pause"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:onClick="pauseResume"
         android:background="@drawable/pause"
         android:layout_toLeftOf="@id/btnD"/>
     <Button
+        android:id="@+id/resume"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:onClick="playResume"
@@ -59,3 +73,4 @@
         android:layout_alignParentBottom="true"
         />
 </RelativeLayout>
+
